@@ -4,6 +4,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/392b42c2fe09633dfd30/maintainability)](https://codeclimate.com/github/corvus-ch/rabbitmq-cli-consumer/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/392b42c2fe09633dfd30/test_coverage)](https://codeclimate.com/github/corvus-ch/rabbitmq-cli-consumer/test_coverage)
 
+IMPORTANT: Looking for maintainer: https://github.com/corvus-ch/rabbitmq-cli-consumer/issues/81.
+
 If you are a fellow PHP developer just like me you're probably aware of the
 following fact: [PHP is meant to die][die].
 
@@ -317,9 +319,9 @@ class TestCommand extends ContainerAwareCommand
 }
 ```
 
-### Use pipes instead of arguments
+### Use pipe instead of arguments
 
-When starting the consumer with the `--pipes` option, the AMQP message will be
+When starting the consumer with the `--pipe` option, the AMQP message will be
 passed on to the executable using STDIN for the message body and fd3 for the
 metadata containing the properties and the delivery info encoded as JSON.
 
